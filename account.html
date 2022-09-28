@@ -1,0 +1,184 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+
+    <title> مس روز | MisRose Website Design</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+
+
+    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"-->
+
+    <link rel="stylesheet" href="
+
+https://stackpath.bootstrapcdn.com
+/font-awesome/4.7.0/css/font-awesome.min.css
+">
+
+    <body dir="rtl">
+
+
+        <div class="header">
+            <div class="container">
+
+                <div class="navbar">
+
+                    <nav>
+                        <ul id="menuItems">
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="products.html">المنتجات</a></li>
+                            <li><a href="clien.html">عملائنا </a></li>
+                            <li><a href="">للتواصل</a></li>
+                            <li><a href="account.html">حسابي</a></li>
+
+                        </ul>
+                        <!-- <a href="cart.html">
+                        <img src="images/cart.png" width="30px" height="30px">
+                    </a> -->
+                        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+
+                </div>
+                <!-- <div class="logo" class="logo">
+                    <img src="images/m_logo.jpg" height="200" width="280">
+                    <br></br>
+                </div> -->
+                </nav>
+            </div>
+        </div>
+
+        <!-- Acoount page-->
+        <div class="account-page">
+
+            <div class="conatiner">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/m_logo.jpg" width="100%">
+                    </div>
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+
+                                <span onclick="regist()">جديد  </span>
+                                <span onclick="login()">تسجيل الدخول</span>
+                                <hr id="Indicator">
+                            </div>
+                            <form id="Loginform">
+                                <input type="text" placeholder="اسم المستخدم">
+                                <input type="password" placeholder="كلمة المرور">
+                                <button type="submit" class="btn">تسجيل الدخول</button>
+                                <a href="">لا تتذكر كلمة المرور !! </a>
+                            </form>
+                            <form id="Regform">
+                                <input type="text" placeholder="اسم المستخدم">
+                                <input type="email" placeholder="البريد الإلكتروني">
+                                <input type="password" placeholder="كلمة المرور">
+                                <button type="submit" class="btn">تسجيل</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer-->
+        <div class="footer">
+
+            <div class="continer">
+
+                <div class="row">
+
+                    <div class="footer-col-1">
+                        <h3> روابط تحميل التطبيق</h3>
+                        <p>قم بتحميل التطبيق على جميع المتاجر.</p>
+
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/App-store.png">
+
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/m_logo.jpg" height="150">
+                        <p>مع مس روز ...... كوني أميرة .</p>
+                    </div>
+
+
+                    <div class="footer-col-4">
+                        <h3>تابعنا على </h3>
+                        <ul>
+                            <a href="https:/www.Facebook.com">
+                                <li>Facebook</li>
+                            </a>
+                            <a href="https:/www.Twitter.com">
+                                <li>Twitter</li>
+                            </a>
+                            <a href="https:/www.Instagram.com">
+                                <li>Instagram</li>
+                            </a>
+                            <a href="https:/www.YouTube.com">
+                                <li>YouTube</li>
+                            </a>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+                <hr>
+                <p class="Copyright">
+                    أحمد حنتوب أبوحريرة</p>
+            </div>
+        </div>
+
+        <!-- js for toggle menu-->
+        <script>
+            var MenuItems = document.getElementById("menuItems");
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+                } else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+        <!-- js for toggle form-->
+
+        <script>
+            var Loginform = document.getElementById("Loginform");
+            var Regform = document.getElementById("Regform");
+            var Indicator = document.getElementById("Indicator");
+
+            function regist() {
+                Regform.style.transform = "translateX(0px)";
+                Loginform.style.transform = "translateX(0px)";
+                ظظIndicator.style.transform = "translateX(100px)";
+            }
+
+            function login() {
+                Regform.style.transform = "translateX(300px)";
+                Loginform.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+
+            }
+        </script>
+
+    </body>
+
+</html>
